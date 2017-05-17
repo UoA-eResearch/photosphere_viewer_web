@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+	html, body, #photosphere {
+      width: 100%;
+      height: 100%;
+	  margin: 0;
+    }
+</style>
+</head>
+<body>
+<div id="photosphere"></div>
+
+
+<link rel="stylesheet" href="http://photo-sphere-viewer.js.org/dist/Photo-Sphere-Viewer/dist/photo-sphere-viewer.min.css">
+<script src="http://photo-sphere-viewer.js.org/dist/three.js/three.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/D.js/lib/D.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/doT/doT.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/uevent/uevent.min.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/three.js-examples/examples/js/renderers/CanvasRenderer.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/three.js-examples/examples/js/renderers/Projector.js"></script>
+<script src="http://photo-sphere-viewer.js.org/dist/Photo-Sphere-Viewer/dist/photo-sphere-viewer.min.js"></script>
+<script src="https://threejs.org/examples/js/controls/DeviceOrientationControls.js"></script>
+
+<script>
+  var PSV = new PhotoSphereViewer({
+    panorama: 'PANO_20170518_110910.jpg',
+    container: 'photosphere',
+    caption: 'Centre for eResearch Visualisation Suite',
+    loading_img: 'http://photo-sphere-viewer.js.org/assets/photosphere-logo.gif',
+    navbar: 'autorotate zoom download caption fullscreen',
+    default_fov: 70,
+    mousewheel: true,
+  });
+</script>
+</body>
+</html>
